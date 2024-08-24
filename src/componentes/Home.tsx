@@ -21,10 +21,10 @@ const Home = () => {
   const [dice1, setDice1] = useState<number>(1);
   const [dice2, setDice2] = useState<number>(1);
   const [lossMessage] = useState<string>(
-    `Oh no, ${"You"} lost the game: 😢💔`
+    `Oh no, ${user?.name} lost the game: 😢💔`
   );
   const [wonMassage] = useState<string>(
-    `${"Wow,"} ${"You"} ${"won the game: 🏆🎉"}`
+    `${"Wow,"} ${user?.name} ${"won the game: 🏆🎉"}`
   );
   const [isGame, setIsGame] = useState(false);
 
